@@ -496,7 +496,7 @@ std::string config_file::process_log_template(const std::string& path, const std
             logtemplate.insert(nl, BIN_LOC);
         }
     }
-    printf("Kismet logtemplate: %s", logtemplate);
+    printf("Kismet logtemplate: %s", logtemplate.c_str());
     return logtemplate;
 }
 

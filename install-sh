@@ -104,6 +104,7 @@ while [ x"$1" != x ]; do
     esac
 done
 
+echo "src is: " $src
 if [ x"$src" = x ]
 then
 	echo "install:	no input file specified"
