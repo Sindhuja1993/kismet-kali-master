@@ -1,0 +1,2 @@
+#to manage the suidinstall we need special use of debconf
+debconf-is-not-a-registry [usr/share/kismet-capture-common/kismet-capture-common-debconf-helper:5]

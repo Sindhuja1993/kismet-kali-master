@@ -1,0 +1,4 @@
+# This is a plugin for kismet
+no-manual-page [usr/bin/kismet_proxytest]
+no-manual-page [usr/bin/kismet_eventbus]
+no-manual-page [usr/bin/kismet_discovery]

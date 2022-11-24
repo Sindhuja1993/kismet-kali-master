@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+
+. /usr/share/debconf/confmodule
+PROGRAM=/usr/bin/kismet_cap_rz_killerbee
+
+/usr/share/kismet-capture-common/kismet-capture-common-debconf-helper --postinst $PROGRAM
+
+#DEBHELPER#

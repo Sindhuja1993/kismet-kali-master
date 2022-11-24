@@ -1,0 +1,81 @@
+#!/bin/sh
+
+set -e
+
+. /usr/share/debconf/confmodule
+GROUP=kismet
+
+if [ "$1" = "--config" ] || [ "$1" = "configure" ]; then
+    db_input critical kismet-capture-common/install-setuid || true
+    db_go
+
+    db_get kismet-capture-common/install-setuid
+    if [ "$RET" != "false" ]; then
+	while true; do
+	    db_input critical kismet-capture-common/install-users || true
+	    db_go
+    
+	    # Find invalid usernames
+	    invalid_users=""
+	    # Make sure each user is listed at most once in the list
+	    valid_users=""
+	    db_get kismet-capture-common/install-users
+	    if [ "$RET" != "" ]; then
+		for user in ${RET}; do
+		    case " $valid_users " in
+			*" $user "*)
+			    ;;
+			*)
+			    if ! getent passwd $user > /dev/null; then
+				invalid_users="$invalid_users $user"
+			    else
+				valid_users="$valid_users $user"
+			    fi
+			    ;;
+		    esac
+		done
+	    fi
+	    if [ -z "$invalid_users" ]; then
+		# We managed to get a correct list
+		db_unregister kismet-capture-common/wrong_users || true
+		db_set kismet-capture-common/install-users "$valid_users" || true
+		break
+	    fi
+	    db_subst kismet-capture-common/wrong_users USERS "$invalid_users"
+	    db_input critical kismet-capture-common/wrong_users || true
+	done
+    fi
+fi
+
+if [ "$1" = "--postinst" ]; then
+    if [ -e "$2" ]; then
+        db_get kismet-capture-common/install-setuid
+	if [ "$RET" = "false" ] ; then
+	    echo "Not installing Kismet with suid-root capture helper.  Kismet "
+	    echo "must be run with 'sudo'.  This is not the preferred nor most secure way "
+	    echo "to install Kismet."
+
+	    if ! dpkg-statoverride --list $2 >/dev/null; then
+		chown root:root $2
+		chmod u=rwx,go=rx $2
+	    fi
+        else
+	    if ! dpkg-statoverride --list $2 >/dev/null; then
+
+		addgroup --quiet --system $GROUP
+		db_get kismet-capture-common/install-users
+
+	        if [ "$RET" != "" ]; then
+		    for x in ${RET}; do
+		        usermod -a -G $GROUP $x
+		    done
+	        fi
+
+	        echo "Installing Kismet with suid-root capture helper ..."
+	        chown root:$GROUP $2
+	        chmod u=rwxs,g=rx,o=r $2
+
+	    fi
+        fi
+    fi
+fi

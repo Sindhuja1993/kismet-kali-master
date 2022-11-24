@@ -1,0 +1,31 @@
+.TH KISMETDB_DUMP_DEVICES "1" "July 2019" "User Commands"
+.SH NAME
+kismetdb_dump_devices \- simple tool for converting the device data from a KismetDB log file to a JSON log
+.SH SYNOPSIS
+.B kismetdb_dump_devices
+[\fI\,OPTION\/\fR]
+.SH OPTIONS
+.TP
+\fB\-i\fR, \fB\-\-in\fR [filename]
+Input kismetdb file
+.TP
+\fB\-o\fR, \fB\-\-out\fR [filename]
+Output Wigle CSV file
+.TP
+\fB\-f\fR, \fB\-\-force\fR
+Force writing to the target file, even if it exists.
+.TP
+\fB\-e\fR, \fB\-\-ekjson\fR
+Write as ekjson records, one device per line, instead of as
+a complete JSON array.
+.TP
+\fB\-v\fR, \fB\-\-verbose\fR
+Verbose output
+.TP
+\fB\-s\fR, \fB\-\-skip\-clean\fR
+Don't clean (sql vacuum) input database
+.SH "SEE ALSO"
+The full documentation for
+.B Kismet
+is maintained in a separate package kismet-docs.
+More information here: https://www.kismetwireless.net/docs

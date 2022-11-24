@@ -1,0 +1,6 @@
+kfreebsd_support
+add-clean-in-plugin.patch
+add-correctly-ldflags-in-plugins.patch
+dont-install-for-suidgroup.patch
+change-install-path-python.patch
+fix-indentation-in-Makefile.in.patch

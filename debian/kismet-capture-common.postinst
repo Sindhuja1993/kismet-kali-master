@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+# ensure that the config script is run
+. /usr/share/debconf/confmodule
+
+#DEBHELPER#

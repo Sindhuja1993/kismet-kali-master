@@ -1,0 +1,26 @@
+From: Sophie Brun <sophie@offensive-security.com>
+Date: Thu, 22 Aug 2019 22:01:52 +0200
+Subject: Add correctly LDFLAGS for plugins build
+
+Last-Update: 2019-07-17
+
+@LDFLAGS@ is substituted in configure and it includes only the LDFLAGS
+value defined in configure.ac without the environment LDFLAGS.
+Last-Update: 2019-07-17
+---
+ Makefile.inc.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile.inc.in b/Makefile.inc.in
+index 4b6a5a8..d595d6a 100644
+--- a/Makefile.inc.in
++++ b/Makefile.inc.in
+@@ -79,7 +79,7 @@ LIB			= ${DESTDIR}@libdir@
+ WAV 		= ${DESTDIR}@datadir@/kismet/wav/
+ HTTPD		= ${DESTDIR}@datadir@/kismet/httpd/
+ 
+-PLUGINLDFLAGS += @PLUGINLDFLAGS@ @LDFLAGS@
++PLUGINLDFLAGS += @PLUGINLDFLAGS@ $(LDFLAGS)
+ 
+ GIT			?= git
+ 

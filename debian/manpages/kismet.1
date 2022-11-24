@@ -1,0 +1,71 @@
+.TH KISMET "1" "July 2019" "Kismet 2019-07-R2" "User Commands"
+.SH NAME
+Kismet \- wireless sniffer and monitor
+.SH SYNOPSIS
+.B kismet
+[\fI\,OPTION\/\fR]
+.SH DESCRIPTION
+Nearly all of these options are run\-time overrides for values in the
+kismet.conf configuration file.  Permanent changes should be made to
+the configuration file.
+.SH GENERIC OPTIONS
+\fB\-v\fR, \fB\-\-version\fR                Show version
+.TP
+\fB\-\-no\-console\-wrapper\fR
+Disable server console wrapper
+.TP
+\fB\-\-no\-ncurses\-wrapper\fR
+Disable server console wrapper
+.TP
+\fB\-\-debug\fR
+Disable the console wrapper and the crash
+handling functions, for debugging
+.TP
+\fB\-f\fR, \fB\-\-config\-file\fR <file>
+Use alternate configuration file
+.TP
+\fB\-\-no\-line\-wrap\fR
+Turn of linewrapping of output
+(for grep, speed, etc)
+.TP
+\fB\-s\fR, \fB\-\-silent\fR
+Turn off stdout output after setup phase
+.TP
+\fB\-\-daemonize\fR
+Spawn detached in the background
+.TP
+\fB\-\-no\-plugins\fR
+Do not load plugins
+.TP
+\fB\-\-homedir\fR <path>
+Use an alternate path as the home
+directory instead of the user entry
+.TP
+\fB\-\-confdir\fR <path>
+Use an alternate path as the base
+config directory instead of the default
+set at compile time
+.TP
+\fB\-\-datadir\fR <path>
+Use an alternate path as the data
+directory instead of the default set at
+compile time.
+.SH LOGGING OPTIONS
+.TP
+\fB\-T\fR, \fB\-\-log\-types\fR <types>      Override activated log types
+.TP
+\fB\-t\fR, \fB\-\-log\-title\fR <title>      Override default log title
+.TP
+\fB\-p\fR, \fB\-\-log\-prefix\fR <prefix>    Directory to store log files
+.TP
+\fB\-n\fR, \fB\-\-no\-logging\fR             Disable logging entirely
+.IP
+.SH DEVICE TRACKING OPTIONS
+.TP
+\fB\-\-device\-timeout\fR=\fI\,n\/\fR
+Expire devices after N seconds
+.SH "SEE ALSO"
+The full documentation for
+.B Kismet
+is maintained in a separate package kismet-docs.
+More information here: https://www.kismetwireless.net/docs

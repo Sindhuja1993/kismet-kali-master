@@ -1,0 +1,39 @@
+.TH KISMETDB_TO_WIGLECSV "1" "July 2019" "User Commands"
+.SH NAME
+kismetdb_to_wiglecsv \- simple tool for converting the packet data from a KismetDB log file to the CSV format used by Wigle
+.SH SYNOPSIS
+.B kismetdb_to_wiglecsv
+[\fI\,OPTION\/\fR]
+.SH OPTIONS
+.TP
+\fB\-i\fR, \fB\-\-in\fR [filename]
+Input kismetdb file
+.TP
+\fB\-o\fR, \fB\-\-out\fR [filename]
+Output Wigle CSV file
+.TP
+\fB\-f\fR, \fB\-\-force\fR
+Force writing to the target file, even if it exists.
+.TP
+\fB\-r\fR, \fB\-\-rate\-limit\fR [rate]
+Limit updated records to one update per [rate] seconds
+per device
+.TP
+\fB\-c\fR, \fB\-\-cache\-limit\fR [limit]
+Maximum number of device to cache, defaults to 1000.
+.TP
+\fB\-v\fR, \fB\-\-verbose\fR
+Verbose output
+.TP
+\fB\-s\fR, \fB\-\-skip\-clean\fR
+Don't clean (sql vacuum) input database
+.TP
+\fB\-e\fR, \fB\-\-exclude\fR lat,lon,dist
+Exclude records within 'dist' *meters* of the lat,lon
+provided.  This can be used to exclude packets close to
+your home, or other sensitive locations.
+.SH "SEE ALSO"
+The full documentation for
+.B Kismet
+is maintained in a separate package kismet-docs.
+More information here: https://www.kismetwireless.net/docs

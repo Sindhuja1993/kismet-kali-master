@@ -1,0 +1,54 @@
+From: Nick Andrik <nick.andrik@gmail.com>
+Date: Thu, 22 Aug 2019 22:01:52 +0200
+Subject: kfreebsd_support
+
+Add support for kfreebsd architecture
+---
+ configure    | 4 ++--
+ configure.ac | 4 ++--
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/configure b/configure
+index f844258..9aae608 100755
+--- a/configure
++++ b/configure
+@@ -4246,7 +4246,7 @@ $as_echo "#define SYS_LINUX 1" >>confdefs.h
+ 
+         linux="yes"
+ 		;;
+-	freebsd*)
++	freebsd* | kfreebsd*)
+ 		{ $as_echo "$as_me:${as_lineno-$LINENO}: result: none needed" >&5
+ $as_echo "none needed" >&6; }
+ 
+@@ -4321,7 +4321,7 @@ $as_echo "#define SYS_LINUX 1" >>confdefs.h
+ 
+         linux="yes"
+ 		;;
+-    freebsd*)
++    freebsd* | kfreebsd*)
+         { $as_echo "$as_me:${as_lineno-$LINENO}: result: none needed" >&5
+ $as_echo "none needed" >&6; }
+ 
+diff --git a/configure.ac b/configure.ac
+index 47c390c..b7b2867 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -91,7 +91,7 @@ then
+ 		AC_DEFINE(SYS_LINUX, 1, Compiling for Linux OS)
+         linux="yes"
+ 		;;
+-	freebsd*)
++	freebsd* | kfreebsd*)
+ 		AC_MSG_RESULT(none needed)
+ 		AC_DEFINE(SYS_FREEBSD, 1, Compiling for FreeBSD)
+ 		bsd="yes"
+@@ -144,7 +144,7 @@ else
+ 		AC_DEFINE(SYS_LINUX, 1, Compiling for Linux OS)
+         linux="yes"
+ 		;;
+-    freebsd*)
++    freebsd* | kfreebsd*)
+         AC_MSG_RESULT(none needed)
+         AC_DEFINE(SYS_FREEBSD, 1, Compiling for FreeBSD)
+ 		bsd="yes"

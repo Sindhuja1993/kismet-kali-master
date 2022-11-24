@@ -1,0 +1,67 @@
+From: Sophie Brun <sophie@offensive-security.com>
+Date: Mon, 7 Sep 2020 14:48:49 +0200
+Subject: Change install path of python module
+
+Last-Update: 2020-09-07
+
+By default it tries to install in /usr/local/lib/python2.7/dist-packages/
+instead of the build directory.
+---
+ capture_freaklabs_zigbee/Makefile.in | 2 +-
+ capture_sdr_rtl433/Makefile.in       | 2 +-
+ capture_sdr_rtladsb/Makefile.in      | 2 +-
+ capture_sdr_rtlamr/Makefile.in       | 2 +-
+ 4 files changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/capture_freaklabs_zigbee/Makefile.in b/capture_freaklabs_zigbee/Makefile.in
+index 646069f..0db7cc8 100644
+--- a/capture_freaklabs_zigbee/Makefile.in
++++ b/capture_freaklabs_zigbee/Makefile.in
+@@ -19,7 +19,7 @@ $(DATASOURCE_NAME)/kismetexternal/%_pb2.py: $(PROTOBUF_DIR)/%.proto
+ 	sed -i -E 's/^import kismet_/from . import kismet_/' $@
+ 
+ install:
+-	$(PYTHON) setup.py install --root="/$(DESTDIR)" --prefix="$(prefix)"
++	$(PYTHON) setup.py install --root="../debian/tmp" --prefix="$(prefix)"
+ 
+ clean:
+ 	@-$(PYTHON) setup.py clean
+diff --git a/capture_sdr_rtl433/Makefile.in b/capture_sdr_rtl433/Makefile.in
+index 646069f..0db7cc8 100644
+--- a/capture_sdr_rtl433/Makefile.in
++++ b/capture_sdr_rtl433/Makefile.in
+@@ -19,7 +19,7 @@ $(DATASOURCE_NAME)/kismetexternal/%_pb2.py: $(PROTOBUF_DIR)/%.proto
+ 	sed -i -E 's/^import kismet_/from . import kismet_/' $@
+ 
+ install:
+-	$(PYTHON) setup.py install --root="/$(DESTDIR)" --prefix="$(prefix)"
++	$(PYTHON) setup.py install --root="../debian/tmp" --prefix="$(prefix)"
+ 
+ clean:
+ 	@-$(PYTHON) setup.py clean
+diff --git a/capture_sdr_rtladsb/Makefile.in b/capture_sdr_rtladsb/Makefile.in
+index d16ba60..15a983a 100644
+--- a/capture_sdr_rtladsb/Makefile.in
++++ b/capture_sdr_rtladsb/Makefile.in
+@@ -22,7 +22,7 @@ $(DATASOURCE_NAME)/kismetexternal/%_pb2.py: $(PROTOBUF_DIR)/%.proto
+ 	sed -i -E 's/^import kismet_/from . import kismet_/' $@
+ 
+ install:
+-	$(PYTHON) setup.py install --root="/$(DESTDIR)" --prefix="$(prefix)"
++	$(PYTHON) setup.py install --root="../debian/tmp" --prefix="$(prefix)"
+ 
+ clean:
+ 	@-$(PYTHON) setup.py clean
+diff --git a/capture_sdr_rtlamr/Makefile.in b/capture_sdr_rtlamr/Makefile.in
+index 646069f..0db7cc8 100644
+--- a/capture_sdr_rtlamr/Makefile.in
++++ b/capture_sdr_rtlamr/Makefile.in
+@@ -19,7 +19,7 @@ $(DATASOURCE_NAME)/kismetexternal/%_pb2.py: $(PROTOBUF_DIR)/%.proto
+ 	sed -i -E 's/^import kismet_/from . import kismet_/' $@
+ 
+ install:
+-	$(PYTHON) setup.py install --root="/$(DESTDIR)" --prefix="$(prefix)"
++	$(PYTHON) setup.py install --root="../debian/tmp" --prefix="$(prefix)"
+ 
+ clean:
+ 	@-$(PYTHON) setup.py clean

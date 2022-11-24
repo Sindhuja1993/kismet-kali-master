@@ -1,0 +1,2 @@
+debian/tmp/usr/bin/kismet_cap_freaklabs_zigbee usr/bin/
+debian/tmp/usr/lib/python3*/site-packages/KismetCaptureFreaklabsZigbee* usr/lib/python3/dist-packages/

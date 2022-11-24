@@ -1,0 +1,2 @@
+debian/tmp/usr/bin/kismet_cap_bt_geiger usr/bin/
+debian/tmp/usr/lib/python3*/site-packages/KismetCaptureBtGeiger* usr/lib/python3/dist-packages/

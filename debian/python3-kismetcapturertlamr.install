@@ -1,0 +1,2 @@
+debian/tmp/usr/bin/kismet_cap_sdr_rtlamr usr/bin/
+debian/tmp/usr/lib/python3*/site-packages/KismetCaptureRtlamr* usr/lib/python3/dist-packages/

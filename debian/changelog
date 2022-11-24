@@ -1,0 +1,927 @@
+kismet (2022.08.R1-0kali1) kali-dev; urgency=medium
+
+  * New upstream version 2022.08.R1
+  * Refresh patches
+  * Update lintian-overrides
+  * Update debian/copyright
+
+ -- Sophie Brun <sophie@offensive-security.com>  Fri, 02 Sep 2022 13:41:07 +0200
+
+kismet (2022.02.R1-0kali1) kali-dev; urgency=medium
+
+  * New upstream version 2022.02.R1
+  * Update debian/rules for new release
+
+ -- Sophie Brun <sophie@offensive-security.com>  Mon, 14 Feb 2022 14:15:03 +0100
+
+kismet (2022.01.R3a-0kali1) kali-dev; urgency=medium
+
+  * New upstream version 2022.01.R3a
+
+ -- Sophie Brun <sophie@offensive-security.com>  Mon, 31 Jan 2022 13:51:02 +0100
+
+kismet (2022.01.R2-0kali3) kali-dev; urgency=medium
+
+  * Add -latomic to variable LIBS, not to LDFLAGS
+
+ -- Sophie Brun <sophie@offensive-security.com>  Mon, 24 Jan 2022 14:59:43 +0100
+
+kismet (2022.01.R2-0kali2) kali-dev; urgency=medium
+
+  * Add -latomic for armel build
+
+ -- Sophie Brun <sophie@offensive-security.com>  Fri, 21 Jan 2022 15:58:46 +0100
+
+kismet (2022.01.R2-0kali1) kali-dev; urgency=medium
+
+  * New upstream version 2022.01.R2
+
+ -- Sophie Brun <sophie@offensive-security.com>  Fri, 21 Jan 2022 08:50:10 +0100
+
+kismet (2022.01.R1-0kali1) kali-dev; urgency=medium
+
+  [ Ben Wilson ]
+  * Consistency with tabs to spaces
+  * Add Uploaders
+  * Update email address
+
+  [ Arnaud Rebillout ]
+  * Add XS-Debian-Vcs-* fields
+
+  [ Sophie Brun ]
+  * New upstream version 2022.01.R1
+
+ -- Sophie Brun <sophie@offensive-security.com>  Thu, 20 Jan 2022 13:31:02 +0100
+
+kismet (2021.08.R1-0kali1) kali-dev; urgency=medium
+
+  * New upstream version 2021.08.R1
+  * Add new binary package python3-kismetcapturebtgeiger
+
+ -- Sophie Brun <sophie@offensive-security.com>  Wed, 18 Aug 2021 09:06:14 +0200
+
+kismet (2021.06.R1-0kali1) kali-dev; urgency=medium
+
+  * New upstream version 2021.06.R1
+
+ -- Sophie Brun <sophie@offensive-security.com>  Wed, 02 Jun 2021 08:26:21 +0200
+
+kismet (2021.05.R1-0kali1) kali-dev; urgency=medium
+
+  [ Sophie Brun ]
+  * Update debian/source/lintian-overrides
+  * Add ignore lintian errors in kismet-logtools
+  * New upstream version 2021.05.R1
+  * Refresh patches
+  * Add new packages kismet-capture-nrf-52840 and kismet-capture-rz-killerbee
+  * Bump Standards-Version to 4.5.1
+
+  [ Arnaud Rebillout ]
+  * Configure gbp import-dsc for a Debian-derived package
+
+ -- Sophie Brun <sophie@offensive-security.com>  Fri, 21 May 2021 11:43:00 +0200
+
+kismet (2020.12.R3-0kali2) kali-dev; urgency=medium
+
+  * Revert "Do not embed truetype font": icons are not displayed on Firefox
+
+ -- Sophie Brun <sophie@offensive-security.com>  Tue, 16 Feb 2021 18:43:39 +0100
+
+kismet (2020.12.R3-0kali1) kali-dev; urgency=medium
+
+  [ Kali Janitor ]
+  * Update renamed lintian tag names in lintian overrides.
+
+  [ Sophie Brun ]
+  * New upstream version 2020.12.R3
+  * Add missing build-dep: libwebsockets-dev
+  * Do not embed truetype font
+
+ -- Sophie Brun <sophie@offensive-security.com>  Mon, 07 Dec 2020 14:37:53 +0100
+
+kismet (2020.09.R4-0kali1) kali-dev; urgency=medium
+
+  * New upstream version 2020.09.R4
+
+ -- Sophie Brun <sophie@offensive-security.com>  Fri, 25 Sep 2020 09:21:05 +0200
+
+kismet (2020.09.R3-0kali1) kali-dev; urgency=medium
+
+  * New upstream version 2020.09.R3
+
+ -- Sophie Brun <sophie@offensive-security.com>  Mon, 21 Sep 2020 11:17:56 +0200
+
+kismet (2020.09.R2-0kali1) kali-dev; urgency=medium
+
+  * New upstream version 2020.09.R2
+
+ -- Sophie Brun <sophie@offensive-security.com>  Mon, 14 Sep 2020 13:53:50 +0200
+
+kismet (2020.09.R1-0kali1) kali-dev; urgency=medium
+
+  [ Kali Janitor ]
+  * debian/copyright: use spaces rather than tabs to start continuation lines.
+
+  [ Sophie Brun ]
+  * New upstream version 2020.09.R1
+  * Refresh patches
+  * Add missing depend librtlsdr0 (see 6670)
+  * Add a patch to fix the indentation in Makefile
+  * Fixes python3 modules installation for new release
+  * Add new package kismet-capture-ubertooth-one
+  * Update installation
+
+ -- Sophie Brun <sophie@offensive-security.com>  Tue, 08 Sep 2020 15:54:48 +0200
+
+kismet (2020.04.R3-0kali2) kali-dev; urgency=medium
+
+  * Import and adapt upstream patch for libmicrohttpd 0.97.1
+
+ -- Sophie Brun <sophie@offensive-security.com>  Wed, 05 Aug 2020 11:03:59 +0200
+
+kismet (2020.04.R3-0kali1) kali-dev; urgency=medium
+
+  * New upstream version 2020.04.R3
+
+ -- Sophie Brun <sophie@offensive-security.com>  Tue, 04 Aug 2020 18:07:28 +0200
+
+kismet (2020.04.R2-0kali1) kali-dev; urgency=medium
+
+  * New upstream version 2020.04.R2
+  * Update debian/copyright
+  * Refresh patches
+
+ -- Sophie Brun <sophie@offensive-security.com>  Thu, 23 Apr 2020 15:28:53 +0200
+
+kismet (2020.03.R1-0kali2) kali-dev; urgency=medium
+
+  * Add superficial autopkgtest for python3 packages to avoid autogeneration
+    of tests by autodep8: it fails because Python package names don't match
+    with import names
+
+ -- Sophie Brun <sophie@offensive-security.com>  Tue, 24 Mar 2020 14:30:12 +0100
+
+kismet (2020.03.R1-0kali1) kali-dev; urgency=medium
+
+  * New upstream version 2020.03.R1
+  * Refresh patches
+  * Fix debian files
+  * Add dh_missing --fail-missing in debian/rules
+  * Add new package kismet-capture-ti-cc-2540
+  * Add new package kismet-capture-ti-cc-2531
+  * Add new package kismet-capture-nrf-51822
+  * Add new package kismet-capture-nxp-kw41z
+  * Use debhelper-compat 12
+  * Bump Standards-Version to 4.5.0
+
+ -- Sophie Brun <sophie@offensive-security.com>  Mon, 23 Mar 2020 12:11:28 +0100
+
+kismet (2019.12.R2-0kali1) kali-dev; urgency=medium
+
+  [ Raphaël Hertzog ]
+  * Update Maintainer field
+  * Update Vcs-* fields
+  * Configure git-buildpackage for Kali
+  * Add GitLab's CI configuration file
+
+  [ Sophie Brun ]
+  * New upstream version 2019.12.R1
+
+ -- Sophie Brun <sophie@offensive-security.com>  Fri, 03 Jan 2020 10:57:51 +0100
+
+kismet (2019.09.R1-0kali1) kali-dev; urgency=medium
+
+  * New upstream version 2019.09.R1
+  * Refresh patches
+
+ -- Sophie Brun <sophie@offensive-security.com>  Tue, 03 Sep 2019 12:02:56 +0200
+
+kismet (2019.08.R2-0kali1) kali-dev; urgency=medium
+
+  * New upstream version 2019.08.R2
+  * Drop festival from Suggests
+  * Harden the .config scripts for kismet-capture-*.
+
+ -- Raphaël Hertzog <raphael@offensive-security.com>  Thu, 22 Aug 2019 21:54:38 +0200
+
+kismet (2019.08.R1-0kali3) kali-dev; urgency=medium
+
+  * Fix the error during the upgrade of kismet-capture-common:
+    kismet-capture-common.config required kismet-capture-common-debconf-helper
+    but it was not installed at this moment
+
+ -- Sophie Brun <sophie@offensive-security.com>  Tue, 20 Aug 2019 11:03:57 +0200
+
+kismet (2019.08.R1-0kali2) kali-dev; urgency=medium
+
+  * Add missing "Conflicts" for new Python3 packages
+
+ -- Sophie Brun <sophie@offensive-security.com>  Wed, 14 Aug 2019 19:10:29 +0200
+
+kismet (2019.08.R1-0kali1) kali-dev; urgency=medium
+
+  * New upstream version 2019.08.R1
+  * Refresh patches
+  * Switch to Python 3
+
+ -- Sophie Brun <sophie@offensive-security.com>  Wed, 14 Aug 2019 10:26:12 +0200
+
+kismet (2019.07.R2-0kali4) kali-dev; urgency=medium
+
+  * Fix build-depends
+
+ -- Sophie Brun <sophie@offensive-security.com>  Fri, 26 Jul 2019 14:10:27 +0200
+
+kismet (2019.07.R2-0kali3) kali-dev; urgency=medium
+
+  * Split kismet packages into several packages
+
+ -- Sophie Brun <sophie@offensive-security.com>  Thu, 25 Jul 2019 14:50:12 +0200
+
+kismet (2019.07.R2-0kali2) kali-dev; urgency=medium
+
+  * Add a patch to fix FTBFS: don't create / use kismet group during build
+
+ -- Sophie Brun <sophie@offensive-security.com>  Wed, 24 Jul 2019 13:50:23 +0200
+
+kismet (2019.07.R2-0kali1) kali-dev; urgency=medium
+
+  * Update debian/watch
+  * New upstream version 2019.07.R2
+  * Refresh patches
+  * Add a patch to build plugins
+  * Remove unused upstream key
+  * Remove obsolete debian/kismet.manpages
+  * Use https in debian/files when possible
+  * Update debian/copyright
+  * Update installation for new upstream release
+  * Don't install .desktop in Kali
+  * Update lintian-overrides for new release and kali
+  * Add missing depends and build-depends
+  * Rewrite debian/rules:
+    - use debhelper
+    - build python2 modules
+  * Update debian/kismet.links
+  * debian/postinst: manage suid-root capture helper for all the scripts
+
+ -- Sophie Brun <sophie@offensive-security.com>  Tue, 23 Jul 2019 16:22:35 +0200
+
+kismet (2016.07.R1-0kali1) unstable; urgency=medium
+
+  * New upstream release (Closes: #835390)
+  * Po-debconf translations
+    - Update Japanese translation (Closes: #819600)
+  * debian/patches
+    - Add openssl_1.1.0_port to make buildable with OpenSSL 1.1.0
+      (Closes: #828365)
+    - Update fix_typos in order to correct additional typos
+    - Refresh existing patches
+  * debian/control
+    - Bump policy to 3.9.8
+
+ -- Nick Andrik <nick.andrik@gmail.com>  Sat, 05 Nov 2016 02:04:15 +0100
+
+kismet (2016.01.R1-0kali1) unstable; urgency=medium
+
+  * New upstream release (Closes: #813801)
+  * debian/patches
+    - Add fix_typos patch to correct some spelling errors
+    - Update kfreebsd_support in order to fix a FTBFS
+    - Refresh existing patches
+  * debian/control
+    - Bump policy to 3.9.6
+    - Add secure URIs for Vcs-* fields
+    - Add description for syslog plugin
+    - Remove description of disabled dot15d4 plugin
+    - Remove unused libusb-dev build-dep (Closes: #810425)
+  * debian/watch
+    - Update URL to also check for .tar.xz files
+    - Add support for checking upstream PGP signature
+  * Remove absolute paths for programs in kismet.post{inst,rm}
+  * Desktop menu entry
+    - Populate Keywords field in kismet.desktop
+    - Remove unused kismet.menu since kismet.desktop is used instead
+  * General cleanup in debian/copyright
+  * Debconf changes
+    - Properly check the username list provided by the user (LP: #1172993)
+      + Add appropriate entry in kismet.templates
+      + Update kismet.config to perform the checks
+    - Update po-debconf
+      + Add Dutch translation (Closes: #765414, #805045)
+      + Update Russian translation (Closes: #804057)
+      + Update Danish translation (Closes: #804085)
+      + Update German translation (Closes: #804410)
+      + Update Czech translation (Closes: #804657)
+      + Update Dutch translation (Closes: #805045)
+      + Update Italian translation (Closes: #805147)
+      + Update French translation (Closes: #805887)
+
+ -- Nick Andrik <nick.andrik@gmail.com>  Sat, 06 Feb 2016 01:04:04 +0100
+
+kismet (2016.01.R1-0kali1) kali-dev; urgency=medium
+
+  * New upstream release.
+  * Update watch file.
+  * No longer drop the kismet.desktop file as kali-menu knows how to override
+    it.
+  * Refresh Debian patches (changes to configure.in now applied on
+    configure.ac).
+  * Remaining changes compared to Debian:
+    - fixed watch file
+    - Files-Excluded in debian/copyright
+
+ -- Raphaël Hertzog <buxy@kali.org>  Fri, 05 Feb 2016 11:56:32 +0100
+
+kismet (2013.03.R1b-3) unstable; urgency=low
+
+  * Fix an incorrect path for dpkg-statoverride (Closes: #729127)
+  * Bump policy to 3.9.5
+
+ -- Nick Andrik <nick.andrik@gmail.com>  Tue, 12 Nov 2013 03:59:00 +0100
+
+kismet (2013.03.R1b-2) unstable; urgency=low
+
+  * Add categories to .desktop file (Closes: #718833)
+  * Add Brazilian Portuguese translation for po-debconf (Closes: #719193)
+  * Remove an unneeded hardening override for kismet-plugins
+
+ -- Nick Andrik <nick.andrik@gmail.com>  Mon, 14 Oct 2013 01:40:23 +0200
+
+kismet (2013.03.R1b-1kali1) kali; urgency=low
+
+  * Update for Kali. Remaining changes:
+    - remove debian/kismet.desktop as Kali provides its own file
+    - drop kali.desktop from debian/kismet.install
+
+ -- Raphaël Hertzog <buxy@kali.org>  Tue, 09 Jul 2013 11:48:24 +0200
+
+kismet (2013.03.R1b-0kali1) unstable; urgency=low
+
+  * New upstream release
+  * libnl3 support
+    - Remove debian/patches/support_for_libnl3, included upstream
+  * plugin hardening support
+    - Add support for PLUGINCXXFLAGS in configure.in
+    - Specify PLUGINCXXFLAGS in debian/rules
+    - Update debian/patches/fix_makefile patch to use PLUGINCXXFLAGS
+    - Update configure file, since we patch configure.in
+  * Also include restricted plugins
+    - Add appropriate rules in debian/rules
+  * Capabilities are used for suid dropping only, they cannot be used to avoid
+    suid altogether (Closes: #703194)
+    - Update debian/kismet.postinst
+  * Explicitly declare manpages to be installed
+    - Add debian/kismet.manpages
+  * Update debian/watch url to also include letters
+
+ -- Nick Andrik <nick.andrik@gmail.com>  Thu, 25 Apr 2013 03:58:02 +0200
+
+kismet (2011.03.R2-2) unstable; urgency=low
+
+  * Move configuration files back to /etc/kismet
+    - Specify correct sysconfdir in rules file
+    - Add mv_conffile commands in maintscript file
+    - Add pre-build-dep for dpkg-maintscript-helper in control file
+  * Delete old unneeded configuration files (Closes: #701515)
+    - Add rm_conffile command in maintscript file
+
+ -- Nick Andrik <nick.andrik@gmail.com>  Tue, 26 Feb 2013 17:05:46 +0100
+
+kismet (2011.03.R2-1~experimental1+kali1) kali; urgency=low
+
+  * Update for Kali. Remaining changes:
+    - remove debian/kismet.desktop as Kali provides its own file
+    - drop kali.desktop from debian/kismet.install
+
+ -- Raphaël Hertzog <buxy@kali.org>  Mon, 18 Feb 2013 16:44:11 +0100
+
+kismet (2011.03.R2-0kali1) unstable; urgency=low
+
+  * New upstream release (Closes: #534884, #558773, #572593, LP: #407972)
+  * New maintainer (Closes: #662105)
+  * Patches
+    - Removed gcc-4.3 and wsp100_support patches since they are included
+      upstream.
+    - fix_gpsmap_bashism: Fixes a bashism in multi-gpsmap example
+      (Closes: #530111)
+    - support_for_libnl3: Add support to build using libnl-3
+    - fix_makefile: Fixes Makefile.inc.in to allow for passing compiler
+      options to plugins build environment, useful for hardening
+    - fix_manpage: Fixes some minor issues in kismet manpage
+    - support_kfreebsd: Add support for kfreebsd systems
+  * Source package builts two binary packages
+    - Details documented in README.Debian (Closes: #416106)
+    - Updated descriptions in control (Closes: #455213, LP: #70015)
+  * Kismet no longer uses /var/{log,lib} folders. Removed mentions in postrm,
+    kismet.dirs
+  * Allow support for non-linux systems
+    - Make libnl-dev, libbluetooth-dev and libcap-dev build-deps relevant only
+      for linux systems
+    - Add support for kfreebsd build
+  * kismet.1 manpage
+    - Fixed spelling typos (Closes: #683709)
+    - Removed blank lines that make mdoc complain (Closes: #551994)
+    - Corrected date syntax (Closes: #551997)
+    - Added links for kismet_client and kismet_server manpages pointing to the
+      main manpage
+    - Override lintian warning for lack of manpage for kismet_capture (it is
+      not run by user anyway)
+  * Removed unnecessary link /etc/others-menu/0000_kismet.desktop
+    (Closes: #563264)
+  * Converted package to CDBS
+    - Simplificaton of rules file
+    - Added 3.0 (quilt) in source/format
+  * Added hardening support
+    - Specified debhelper version 9 in compat file
+    - Added hardening options in rules file
+      + Added explicit versioned dpkg-dev build dependency for dpkg-buildflags
+    - Patched Makefile.inc.in to allow passing build options for plugins
+    - lintian overrides for false positives in spectool_*.so plugins
+  * Kismet allows for suid/priv dropping configured via debconf
+    - Available debconf options are specified in the templates file
+    - postinst creates the kismet user group if necessary and postrm removes
+      it on package purge
+  * Added full support for po-debconf
+    - config and templates files
+    - lintian override for suid install question
+    - build dependency on po-debconf
+    - po/POTFILES.in translation templates
+    - translations include:
+      + Japanese
+      + Danish     (Closes: #693259)
+      + Russian    (Closes: #693708, #696253)
+      + Italian    (Closes: #693737)
+      + German     (Closes: #693836)
+      + Galician   (Closes: #693943)
+      + French     (Closes: #693955)
+      + Polish     (Closes: #694110)
+      + Czech      (Closes: #694787)
+      + Spanish    (Closes: #695538)
+      + Portuguese (Closes: #696444)
+      + Swedish    (Closes: #697292)
+  * Added RELEASENOTES.txt in docs
+  * Updated the watch file
+    - URL can now include versions after 2009
+    - Mangling in order to use dots instead of dashes in the version
+  * Copyright file
+    - Updated in dep5 format
+    - Extended packaging copyright
+    - Extended source copyright
+    - Updated license for tcpdump-extract.h file (BSD-4 clause instead of
+      BSD-3 clause)
+  * Package maintenance in control
+    - Bumped standars version to 3.9.4
+    - Added project homepage
+    - Dropped unnecessary build-deps
+
+ -- Nick Andrik <nick.andrik@gmail.com>  Sat, 23 Feb 2013 02:03:31 +0100
+
+kismet (2008-05-R1-4.3) unstable; urgency=low
+
+  * Drop -rpath, it seems completely useless anyway
+
+ -- Vincent Fourmond <fourmond@debian.org>  Fri, 10 Jun 2011 12:58:18 +0200
+
+kismet (2008-05-R1-4.2) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Buil-dep on libmagickcore-dev (Closes: #625548, #629726)
+  * Adding ${misc:Depends} for potential dh-induced dependencies
+
+ -- Vincent Fourmond <fourmond@debian.org>  Fri, 10 Jun 2011 12:56:21 +0200
+
+kismet (2008-05-R1-4.1kali4) kali; urgency=low
+
+  * Removed desktop entry from rules file
+
+ -- Mati Aharoni <muts@kali.org>  Tue, 15 Jan 2013 20:09:24 -0500
+
+kismet (2008-05-R1-4.1kali3) kali; urgency=low
+
+  * Removed desktop file
+
+ -- Mati Aharoni <muts@kali.org>  Sat, 15 Dec 2012 14:45:43 -0500
+
+kismet (2008-05-R1-4.1kali2) kali; urgency=low
+
+  * Fixed build depends
+
+ -- Devon Kearns <dookie@kali.org>  Tue, 04 Dec 2012 09:20:12 -0700
+
+kismet (2008-05-R1-4.1kali1) kali; urgency=low
+
+  * Kali Version
+
+ -- Devon Kearns <dookie@kali.org>  Tue, 04 Dec 2012 08:53:52 -0700
+
+kismet (2008-05-R1-4.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Remove unnecessary build-dep on libglib1.2-dev. (Closes: #523682).
+  * Fix to build with gcc-4.4. (Closes: #545725).
+    + Thanks to Alessio Treglia for the fix.
+  * Replace Ethereal with wireshark in README. (Closes: #416104).
+  * Fix symlink for desktop file in kismet.links. (Closes: #499791).
+
+ -- Barry deFreese <bdefreese@debian.org>  Sat, 17 Oct 2009 15:44:42 -0400
+
+kismet (2008-05-R1-4) unstable; urgency=low
+
+  * updated the copyright file
+  * changed extra/manuf_update.sh to update the files in /etc/kismet
+    (Closes: #416105)
+  * updated the README.debian (Closes: #416107)
+
+ -- Francois Gurin <matrix@debian.org>  Fri, 04 Jul 2008 15:36:20 -0400
+
+kismet (2008-05-R1-3) unstable; urgency=low
+
+  * cleared out upstream debian\postinst for maemo (Closes: #488442)
+  * call dh_desktop in build script (Closes: #489162)
+  * added desktop and menu files
+
+ -- Francois Gurin <matrix@debian.org>  Fri, 04 Jul 2008 09:42:16 -0400
+
+kismet (2008-05-R1-2) unstable; urgency=low
+
+  * Removed maemo-specific dpkg bits
+
+ -- Francois Gurin <matrix@debian.org>  Sun, 29 Jun 2008 04:41:38 -0400
+
+kismet (2008-05-R1-0kali1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Francois Gurin <matrix@debian.org>  Fri, 13 Jun 2008 03:19:04 -0400
+
+kismet (2007-10-R1-2.1) unstable; urgency=high
+
+  * Non-maintainer upload.
+  * Applied patches to make package build with gcc-4.3, closes: #456091
+
+ -- root <root@feivel.credativ.de>  Sun, 06 Apr 2008 10:33:49 +0000
+
+kismet (2007-10-R1-2) unstable; urgency=low
+
+  * Updated depends (Closes: #447872)
+
+ -- Francois Gurin <matrix@debian.org>  Wed, 24 Oct 2007 10:26:44 -0400
+
+kismet (2007-10-R1-0kali1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Francois Gurin <matrix@debian.org>  Tue, 23 Oct 2007 06:43:04 -0400
+
+kismet (2007-01-R1b-1.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * 0-day alpha porter NMU.
+  * Drop an unused 'thread_status' variable whose only function is to
+    prevent the package from building on 64-bit architectures.
+    (Closes: #410403)
+
+ -- Steve Langasek <vorlon@debian.org>  Wed, 02 May 2007 16:41:43 -0700
+
+kismet (2007-01-R1b-0kali1) unstable; urgency=low
+
+  * New upstream release (Closes: ##409839)
+  * Rebuild: Not linked against libstdc++5 (Closes: #370026)
+  * Applied patch to handle gpsd Altitude = "?" (Closes: #320373)
+  * Rebuild: Replaced Magick-config with pkg-config  (Closes: #347366)
+  * Dependecy on ethereal-common updated to wireshark-common in previous release (Closes: #383170)
+  * Changed version format to match upstream package (2007-01-R1b vs 2006.04.R1)
+  * Fixed watch file
+
+ -- Francois Gurin <matrix@debian.org>  Wed,  7 Feb 2007 16:25:31 -0500
+
+kismet (2006.04.R1-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Build-depend on wireshark-dev instead of obsolete ethereal-dev.
+  * Depend on wireshark-common instead of obsolete ethereal-common; fixes
+    FTBFS. Also use -rpath /usr/lib/wireshark and --with-ethereal=wireshark.
+    (Closes: #380084)
+
+ -- Steinar H. Gunderson <sesse@debian.org>  Tue, 29 Aug 2006 00:02:59 +0200
+
+kismet (2006.04.R1-0kali1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Francois Gurin <matrix@debian.org>  Sat, 15 Apr 2006 00:27:27 -0400
+
+kismet (2005.08.R1-1.2) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Compile with -01 on mips(el) to work around g++-4.0 ICE
+    (Closes: #336535). Various fixes to upstream's handling
+    of CXXFLAGS needed.
+
+ -- Frank Lichtenheld <djpig@debian.org>  Mon, 31 Oct 2005 13:43:01 +0100
+
+kismet (2005.08.R1-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Imagemagick transition (Closes: #332216).
+
+ -- Luk Claes <luk@debian.org>  Thu, 27 Oct 2005 16:48:24 +0200
+
+kismet (2005.08.R1-0kali1) unstable; urgency=high
+
+  * New upstream release [CAN-2005-2626] [CAN-2005-2627] (Closes: #323386)
+  * build against renamed libgmp3c2, again (Closes: #317838)
+
+ -- Francois Gurin <matrix@debian.org>  Sat, 20 Aug 2005 11:50:43 -0400
+
+kismet (2005.07.R1a-0kali1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Francois Gurin <matrix@debian.org>  Mon, 15 Aug 2005 02:15:16 -0400
+
+kismet (2005.06.R1-0kali1) unstable; urgency=low
+
+  * New upstream release (Closes: #316688, #316288)
+  * added suggest flite as an alternative to festival
+  * build against renamed libgmp3c2 (Closes: #317838)
+
+ -- Francois Gurin <matrix@debian.org>  Wed, 22 Jun 2005 23:01:09 -0400
+
+kismet (2005.04.R1-2) unstable; urgency=low
+
+  * fixed typo in kismet_client's front panel (Closes: #305545)
+  * added suggests libwww-perl for gpsmap-helper-earthamaps (Closes: #304423)
+
+ -- Francois Gurin <matrix@debian.org>  Fri, 29 Apr 2005 01:24:08 -0400
+
+kismet (2005.04.R1-0kali1) unstable; urgency=low
+
+  * New upstream release
+  * added suggests on gsfonts to make gpsmap happy (Closes: #299294)
+
+ -- Francois Gurin <matrix@debian.org>  Tue,  5 Apr 2005 12:30:39 -0400
+
+kismet (2005.01.R1-2) unstable; urgency=low
+
+  * fix kismet conf man page (Closes: #293567)
+  * fixed maintainer field which made previous upload an NMU
+
+ -- Francois Gurin <matrix@debian.org>  Sun,  6 Mar 2005 21:55:50 -0500
+
+kismet (2005.01.R1-0kali1) unstable; urgency=low
+
+  * New upstream release (Closes: #293362, #278666)
+  * applied Nick Rusnov's wsp100 support patch (Closes: #288035)
+  * updated man page for usage as root (Closes: #278519)
+  * new imagemagick api support (Closes: #275182)
+  * updated README.Debian for new orinoco monitor patch location (Closes: #292685)
+  * updated README.Debian about priv-dropping (Closes: #278520)
+  * suggests gpsd instead of gpsdrive (Closes: #286688)
+
+ -- Francois Gurin <matrix@debian.org>  Sun,  6 Mar 2005 19:23:37 -0500
+
+kismet (2004.04.R1-5) unstable; urgency=low
+
+  * patch libmagick variable usage (Closes: #261039)
+
+ -- Francois Gurin <matrix@debian.org>  Wed,  4 Aug 2004 09:22:33 -0400
+
+kismet (2004.04.R1-4) unstable; urgency=low
+
+  * typo fix (Closes: #263074)
+
+ -- Francois Gurin <matrix@debian.org>  Mon,  2 Aug 2004 18:36:48 -0400
+
+kismet (2004.04.R1-3) unstable; urgency=medium
+
+  * libtiff4 rebuild
+
+ -- Francois Gurin <matrix@debian.org>  Sun,  1 Aug 2004 13:57:24 -0400
+
+kismet (2004.04.R1-2) unstable; urgency=low
+
+  * fix default log directory in config file (Closes: #256827)
+  * added a postrm to remove state and logs on purge (Closes: #250247)
+  * modified configure/.in to find debian's ethereal directories
+  * uses rpath on /usr/lib/ethereal to find libwiretap for now
+
+ -- Francois Gurin <matrix@debian.org>  Sat, 17 Jul 2004 03:42:42 -0400
+
+kismet (2004.04.R1-1.1) unstable; urgency=low
+
+  * non-maintainer upload at debconf4
+  * used libmagick6-dev instead of libmagick-dev as build-dependency
+    (Closes: #245084, #248413, 249317)
+  * added ethereal-common dependency (Closes: #248005)
+
+ -- Norbert Tretkowski <nobse@debian.org>  Thu, 27 May 2004 14:53:03 -0300
+
+kismet (2004.04.R1-0kali1) unstable; urgency=low
+
+  * New upstream release (Closes: #233187)
+
+ -- Francois Gurin <matrix@debian.org>  Sat,  1 May 2004 22:33:10 -0400
+
+kismet (3.0.1-0kali1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Francois Gurin <matrix@debian.org>  Sun, 28 Sep 2003 02:30:28 -0400
+
+kismet (3.0.0-2) unstable; urgency=low
+
+  * added wsp100 (Closes: #207956)
+
+ -- Francois Gurin <matrix@debian.org>  Sun,  7 Sep 2003 12:13:22 -0400
+
+kismet (3.0.0-0kali1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Francois Gurin <matrix@debian.org>  Fri,  1 Aug 2003 20:32:03 -0400
+
+kismet (2.8.1-4) unstable; urgency=low
+
+  * recompile for new version of libmagick (Closes: #195824)
+  * removed blanks in control for woody builds (Closes: #195580)
+  * added dependency on wireless-tools (Closes: #195835)
+  * removed CVS directories from doc directory (Closes: #191010)
+
+ -- Francois Gurin <matrix@debian.org>  Tue,  3 Jun 2003 00:33:24 -0400
+
+kismet (2.8.1-3) unstable; urgency=low
+
+  * removed CVS directories from doc (Closes: #191010)
+
+ -- Francois Gurin <matrix@debian.org>  Thu,  8 May 2003 22:36:52 -0400
+
+kismet (2.8.1-2) unstable; urgency=low
+
+  * fix kismet script for auto setup (Closes: #192504)
+  * put GPS support back in (Closes: #186407)
+
+ -- Francois Gurin <matrix@debian.org>  Wed,  9 Apr 2003 23:14:59 -0400
+
+kismet (2.8.1-0kali1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Francois Gurin <matrix@debian.org>  Tue, 11 Mar 2003 22:33:50 -0500
+
+kismet (2.6.2-6) unstable; urgency=low
+
+  * Removed GPS support for the time being
+    (Closes: #175601, #161254, #166405, #174904)
+
+ -- Francois Gurin <matrix@debian.org>  Mon,  6 Jan 2003 18:22:07 -0500
+
+kismet (2.6.2-5) unstable; urgency=low
+
+  * Previous release was broken on i386 due to stale libs
+
+ -- Francois Gurin <matrix@debian.org>  Wed,  1 Jan 2003 05:38:14 -0500
+
+kismet (2.6.2-4) unstable; urgency=low
+
+  * Previous release was broken on i386 due to stale libs
+
+ -- Francois Gurin <matrix@debian.org>  Wed, 27 Nov 2002 20:58:30 -0500
+
+kismet (2.6.2-3) unstable; urgency=low
+
+  * Reenable support for gpsmap
+  * Disable setuid option for kismet_server
+
+ -- Francois Gurin <matrix@debian.org>  Tue, 12 Nov 2002 16:13:54 -0500
+
+kismet (2.6.2-2) unstable; urgency=low
+
+  * Removed support for gpsmap (Closes: #161254)
+
+ -- Francois Gurin <matrix@debian.org>  Sun, 27 Oct 2002 04:19:22 -0500
+
+kismet (2.6.2-0kali1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Francois Gurin <matrix@debian.org>  Mon, 21 Oct 2002 00:00:25 -0400
+
+kismet (2.6.1-0kali1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Francois Gurin <matrix@debian.org>  Thu,  3 Oct 2002 13:06:46 -0400
+
+kismet (2.6.0-0kali1) unstable; urgency=low
+
+  * New upstream release
+  * Rebuild to fix a dependency problem (Closes: #161254)
+  * Fix shell globbing issue (Closes: #160562)
+
+ -- Francois Gurin <matrix@debian.org>  Fri, 27 Sep 2002 10:43:43 -0400
+
+kismet (2.4-0kali1) unstable; urgency=low
+
+  * New upstream release (Closes: #153518)
+  * Rebuild to fix a dependency problem (Closes: #152688)
+  * Included kismet_hopper (Closes: #151284)
+  * Defaults to setup the card somewhat sanely
+  * Added some logic for the hostap driver
+  * Tried to sanitize it for g++-3.0, but I expect Lamont Jones will prove me wrong
+  * New manpages, added a README.Debian to fill in some gaps
+
+ -- Francois Gurin <matrix@debian.org>  Mon, 15 Jul 2002 15:34:27 -0400
+
+kismet (2.2.2-2) unstable; urgency=low
+
+  * Added proper copyright file. (Closes: #148579)
+  * Fixed a problem with generic method. (Closes: #148578)
+
+ -- Francois Gurin <matrix@debian.org>  Thu, 30 May 2002 22:03:20 -0400
+
+kismet (2.2.2-0kali1) unstable; urgency=high
+
+  * New upstream release
+  * Fixes another potentially exploitable remote vulnerability
+
+ -- Francois Gurin <matrix@debian.org>  Tue, 28 May 2002 20:44:47 -0400
+
+kismet (2.2.1-2) unstable; urgency=low
+
+  * Applied another patch by LaMont Jones g++ errors.
+
+ -- Francois Gurin <matrix@debian.org>  Tue, 28 May 2002 11:38:11 -0400
+
+kismet (2.2.1-0kali1) unstable; urgency=high
+
+  * New upstream release
+  * Fixes a potentially exploitable hole in kismet_server
+
+ -- Francois Gurin <matrix@debian.org>  Tue, 28 May 2002 01:33:06 -0400
+
+kismet (2.2-3) unstable; urgency=low
+
+  * More g++-3.0 sanitation
+
+ -- Francois Gurin <matrix@debian.org>  Mon, 27 May 2002 13:24:06 -0400
+
+kismet (2.2-2) unstable; urgency=low
+
+  * some fixes for hppa
+
+ -- Francois Gurin <matrix@debian.org>  Mon, 27 May 2002 02:15:33 -0400
+
+kismet (2.2-0kali1) unstable; urgency=low
+
+  * New upstream release. (Closes: #144845)
+  * Pretreated for gcc-3.0
+  * Fixed share directory install. (Closes: #142510)
+
+ -- Francois Gurin <matrix@debian.org>  Fri, 17 May 2002 03:37:41 -0400
+
+kismet (2.0-0kali1) unstable; urgency=low
+
+  * New upstream release. (Closes: #144845)
+  * Enough upstream changes to probably break hppa again
+
+ -- Francois Gurin <matrix@debian.org>  Fri, 3 May 2002 13:37:50 -0400
+
+kismet (1.4.2-4) unstable; urgency=low
+
+  * Really applied LaMont's patch to Really fix hppa, maybe.
+
+ -- Francois Gurin <matrix@debian.org>  Sat,  6 Apr 2002 19:43:19 -0500
+
+kismet (1.4.2-3) unstable; urgency=low
+
+  * Patched to fix a g++-3.0 compiler problem thanks to LaMont Jones,
+    kismet now builds on hppa. (Closes: #140876)
+
+ -- Francois Gurin <matrix@debian.org>  Thu,  4 Apr 2002 23:59:52 -0500
+
+kismet (1.4.2-2) unstable; urgency=low
+
+  * Fixed typo in description. (Closes: #140101)
+  * Removed build-dep on build-essential. (Closes: #140026)
+
+ -- Francois Gurin <matrix@debian.org>  Thu, 28 Mar 2002 20:09:14 -0500
+
+kismet (1.4.2-0kali1) unstable; urgency=low
+
+  * New upstream release
+  * Initial Debian upload. (Closes: #133513)
+
+ -- Francois Gurin <matrix@debian.org>  Fri, 15 Mar 2002 20:59:37 -0500
+
+kismet (1.4.1-0kali1) unstable; urgency=low
+
+  * New upstream release
+
+ -- root <matrix@debian.org>  Sun, 17 Feb 2002 20:10:41 -0500
+
+kismet (1.4-0kali1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- root <matrix@debian.org>  Sun,  3 Feb 2002 15:49:25 -0500

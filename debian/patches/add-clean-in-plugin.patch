@@ -1,0 +1,22 @@
+From: Sophie Brun <sophie@offensive-security.com>
+Date: Thu, 22 Aug 2019 22:01:52 +0200
+Subject: Add missing clean target in plugin
+
+Last-Update: 2019-07-15
+
+In plugin-httpproxytest clean target is missing: add it to avoid failure
+during build.
+Last-Update: 2019-07-15
+---
+ plugin-demo-externalhttp/Makefile | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/plugin-demo-externalhttp/Makefile b/plugin-demo-externalhttp/Makefile
+index 99fa238..55d2e67 100644
+--- a/plugin-demo-externalhttp/Makefile
++++ b/plugin-demo-externalhttp/Makefile
+@@ -44,3 +44,4 @@ userinstall:
+ 	$(INSTALL) manifest.conf ${HOME}/.kismet/plugins/$(PLUGIN_NAME)/manifest.conf
+ 	$(INSTALL) -o $(INSTUSR) -g $(INSTGRP) -m 555 kismet_proxytest $(BIN)/kismet_proxytest;
+ 
++clean:

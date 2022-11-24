@@ -1,0 +1,6 @@
+# Source missing: ignore these errors in Kali
+source-is-missing [http_data/js/*]
+source-is-missing [plugin-dashboard/httpd/js/packery.pkgd.min.js]
+# specific to kali
+adopted-extended-field (in section for source) XS-Debian-Vcs-*
+adopted-extended-field (in section for source) XSBC-Original-Maintainer*

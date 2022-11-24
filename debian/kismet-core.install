@@ -1,0 +1,8 @@
+debian/tmp/etc
+debian/tmp/usr/bin/kismet
+debian/tmp/usr/bin/kismet_cap_kismetdb
+debian/tmp/usr/bin/kismet_cap_pcapfile
+debian/tmp/usr/bin/kismet_server
+debian/tmp/usr/share
+debian/tmp/usr/lib/*/pkgconfig/kismet.pc
+packaging/systemd/kismet.service lib/systemd/system/

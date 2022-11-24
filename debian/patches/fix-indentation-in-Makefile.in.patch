@@ -1,0 +1,31 @@
+From: Sophie Brun <sophie@offensive-security.com>
+Date: Fri, 4 Sep 2020 10:18:40 +0200
+Subject: Fix the identation in Makefile.in
+
+Last-Update: 2020-09-04
+
+
+The build fails with
+"BUILD_DATE ?= Thu Sep  3 09:32:34 UTC 2020
+/bin/sh: 1: BUILD_DATE: not found
+"
+---
+ Makefile.in | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/Makefile.in b/Makefile.in
+index fb65ec7..7b89f9b 100644
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -267,9 +267,9 @@ all-with-plugins:
+ 
+ # Autogen the version file
+ ifdef SOURCE_DATE_EPOCH
+-	BUILD_DATE ?= $(shell date -u -d "@$(SOURCE_DATE_EPOCH)" 2>/dev/null || date -u -r "$(SOURCE_DATE_EPOCH)" 2>/dev/null || date -u)
++BUILD_DATE ?= $(shell date -u -d "@$(SOURCE_DATE_EPOCH)" 2>/dev/null || date -u -r "$(SOURCE_DATE_EPOCH)" 2>/dev/null || date -u)
+ else
+-	BUILD_DATE ?= $(shell date)
++BUILD_DATE ?= $(shell date)
+ endif
+ version.c:	FORCE
+ 	@{ $(GIT) rev-parse --short HEAD 2>/dev/null || echo "non-git-release"; } | awk ' BEGIN {print "#include \"version.h\""} {print "const char *VERSION_GIT_COMMIT = \"" $$0"\";"} END {}' > version.c

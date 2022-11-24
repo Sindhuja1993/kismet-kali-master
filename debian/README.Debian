@@ -1,0 +1,13 @@
+The kismet source package is split into several packages:
+
+kismet:
+	This is the metapackage: it installs the Kismet packages.
+kismet-core:
+	This is the core of kismet.
+kismet-capture-*:
+	These packages contain capture helpers. They don't require
+	kismet-core to be used.
+python3-kismet*:
+	Theses packages contain capture driver in Python 3.
+kismet-plugins:
+	This package contains some extra plugins for kismet.

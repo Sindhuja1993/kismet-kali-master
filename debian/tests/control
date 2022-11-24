@@ -1,0 +1,15 @@
+Test-Command: debian/tests/basic-test.sh test_install_python3_kismetcapturefreaklabszigbee
+Depends: python3-kismetcapturefreaklabszigbee, python3-all
+Restrictions: allow-stderr, superficial
+
+Test-Command: debian/tests/basic-test.sh test_install_python3_kismetcapturertl433
+Depends: python3-kismetcapturertl433, python3-all
+Restrictions: allow-stderr, superficial
+
+Test-Command: debian/tests/basic-test.sh test_install_python3_kismetcapturertladsb
+Depends: python3-kismetcapturertladsb, python3-all
+Restrictions: allow-stderr, superficial
+
+Test-Command: debian/tests/basic-test.sh test_install_python3_kismetcapturertlamr
+Depends: python3-kismetcapturertlamr, python3-all
+Restrictions: allow-stderr, superficial

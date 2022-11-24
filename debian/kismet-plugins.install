@@ -1,0 +1,4 @@
+debian/tmp/usr/bin/kismet_proxytest
+debian/tmp/usr/bin/kismet_eventbus
+debian/tmp/usr/bin/kismet_discovery
+debian/tmp/usr/lib/*/kismet/*/*

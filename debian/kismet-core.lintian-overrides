@@ -1,0 +1,7 @@
+# Debian packaged versions are not compatible
+embedded-javascript-library please use libjs-jquery [usr/share/kismet/httpd/js/jquery-3.1.0.min.js]
+embedded-javascript-library please use libjs-jquery-ui [usr/share/kismet/httpd/css/jquery-ui.min.css]
+kismet-core: embedded-javascript-library please use libjs-jquery-ui [usr/share/kismet/httpd/js/jquery-ui.min.js]
+kismet-core: embedded-javascript-library please use libjs-raphael [usr/share/kismet/httpd/js/raphael.min.js]
+duplicate-font-file also in (fonts-font-awesome fonts-font-awesome) [usr/share/kismet/httpd/fonts/FontAwesome.otf]
+duplicate-font-file also in (fonts-font-awesome fonts-font-awesome) [usr/share/kismet/httpd/fonts/fontawesome-webfont.ttf]
